@@ -40,4 +40,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--This project was inspired by Microverse](https://www.microverse.org)
+-This project was inspired by [Microverse](https://www.microverse.org)
