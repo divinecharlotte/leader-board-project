@@ -14,4 +14,3 @@ addNewScore.addEventListener('submit', (e) => {
 
 const refreshButton = document.querySelector('.refresh-button');
 refreshButton.addEventListener('click', newScore.fetchScore);
-window.addEventListener('load', newScore.getScore);

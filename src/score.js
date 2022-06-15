@@ -17,26 +17,28 @@ class Score {
     try {
       const data = await fetch(this.baseUrl);
       const res = await data.json();
-      res.result.map((item) => this.scoreData.push(item));
+      const displayData = res.result.map((item) => item);
+      this.scoreData = displayData;
       return this.getScore();
     } catch (err) { return err; }
   };
 
   addScore=async ({ user, scoreNum }) => {
     try {
+      const newgame = { user, score: scoreNum };
       const config = {
         method: 'POST',
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ user, score: scoreNum }),
+        body: JSON.stringify(newgame),
       };
 
       const data = await fetch(this.baseUrl, config);
-      const res = await data.json();
-      this.scoreData.push(res);
-      return this.fetchScore();
+      this.scoreData.push(newgame);
+      this.getScore();
+      return data;
     } catch (err) { return err; }
   }
 }
