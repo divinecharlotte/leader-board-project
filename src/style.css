@@ -53,9 +53,7 @@ input[type="submit"] {
 }
 
 button:hover,
-input[type="submit"]:hover {
-  background-color: var(--gray);
-}
+input[type="submit"]:hover { background-color: var(--gray); }
 
 .recent-score {
   width: 50%;
@@ -125,13 +123,8 @@ input[type="submit"]:hover {
   }
 
   .recent-score,
-  .add-new-score h2 {
-    width: 100%;
-  }
-
-  .add-new-score {
-    width: calc(100% - 20px);
-  }
+  .add-new-score h2 { width: 100%; }
+  .add-new-score { width: calc(100% - 20px); }
 
   .add-new-score input {
     width: calc(100% - 20px);
@@ -140,9 +133,8 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 360px) {
-  .score-container {
-    min-width: calc(100% - 20px);
-  }
+
+  .score-container { min-width: calc(100% - 20px); }
 
   .main-container h1 {
     width: 350px;
