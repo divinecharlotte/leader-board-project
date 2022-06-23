@@ -1,6 +1,9 @@
 ### leader-board-project
 The leaderboard website displays scores submitted by different players. It also allows you to submit your score.
 
+## Live demo 
+you can see the poject [live](https://divinecharlotte.github.io/leader-board-project/)
+
 ### Built With
 HTML
 CSS
