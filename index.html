@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leader board</title>
+  <script defer src="runtime.js"></script><script defer src="index.js"></script></head>
+  <body>
+    <section class="main-container">
+      <h1>Leader board</h1>
+      <div class="score-container">
+      <div class="recent-score">
+        <div class="recent-score-header">
+          <h2>Recent scores</h2>
+          <button type="button" class="refresh-button">Refresh</button>
+        </div>
+        <ul class="recent-score-group"></ul>
+      </div>
+      <form class="add-new-score">
+        <h2>Add your score</h2>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="number" name="score" placeholder="Your Score" required>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    </section>
+  </body>
+</html>
